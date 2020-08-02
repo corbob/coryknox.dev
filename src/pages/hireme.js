@@ -6,7 +6,7 @@ export default function Hireme() {
     return (
         <div style={{'text-align': `center`}}>
         <h1> Cory Knox - Resume</h1>
-        <p>This is where a resume will be once I finish it. For now you can find it here: <ExtLink href="https://registry.jsonresume.com/corbob" text="json resume" />.</p>
+        <p>This is where a resume will be once I finish it. For now you can find it here: <ExtLink href="https://registry.jsonresume.org/corbob" text="json resume" />.</p>
         <Link to="/">Home</Link>
         </div>
     )
