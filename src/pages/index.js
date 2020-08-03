@@ -4,28 +4,37 @@ import { Link } from "gatsby"
 
 export default function Home() {
     return (
-        <div style={{'text-align': `center`}}>
-            <h1>Cory Knox</h1>
+        <div>
+            <h1>Hello!</h1>
             <p>
-                <img
-                    src="Cory.png"
-                    style={{ width: "30%" }}
-                    alt="ReverentGeek Style Avatar of Cory"
-                />
+                <img className="avatar" src="Cory.png" alt="ReverentGeek Style Avatar of Cory" />
+            </p>
+            <h2>I'm Cory</h2>
+            <p>
+                I do computer things with the computers. Experienced in
+                automating things with PowerShell. Are you hiring? I'm{" "}
+                <Link to="/hireme">available for hire.</Link>
             </p>
             <ul>
                 <li>
-                    <ExtLink href="https://twitter.com/coryknox" text="Twitter" />
+                    <ExtLink
+                        icon="https://twitter.com/favicon.ico"
+                        href="https://twitter.com/coryknox"
+                        text="Twitter"
+                    />
                 </li>
                 <li>
-                    <ExtLink href="https://github.com/corbob" text="GitHub" />
+                    <ExtLink 
+                        icon="https://github.com/favicon.ico"
+href="https://github.com/corbob" text="GitHub" />
                 </li>
                 <li>
-                    <ExtLink href="https://linkedin.com/in/knoxcory" text="LinkedIn" />
+                    <ExtLink
+                        icon="https://linkedin.com/favicon.ico"
+                        href="https://linkedin.com/in/knoxcory"
+                        text="LinkedIn"
+                    />
                 </li>
-        <li>
-        <Link to="/hireme">Resume</Link>
-        </li>
             </ul>
         </div>
     )
