@@ -27,6 +27,7 @@ namespace coryknox.dev
                                 }
                                 return doc.Destination;
                             }))
+                .AddSetting(WebKeys.NetlifyRedirects, true)
                 .RunAsync();
     }
 }

@@ -3,6 +3,5 @@ HideSidebar: true
 ---
 ## About Me
 
-Some things about me here...
+<img src = "/assets/img/Cory.png" width = "25%" />
 
-![Avatar of Cory Knox](/assets/img/Cory.png)
