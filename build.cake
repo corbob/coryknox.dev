@@ -1,12 +1,4 @@
 //////////////////////////////////////////////////////////////////////
-// Addins
-//////////////////////////////////////////////////////////////////////
-
-#addin nuget:?package=Cake.Git&version=0.22.0
-#addin nuget:?package=Cake.Gulp&version=1.0.0
-#addin nuget:?package=Cake.Yarn&version=0.4.8
-
-//////////////////////////////////////////////////////////////////////
 // Scripts
 //////////////////////////////////////////////////////////////////////
 
@@ -58,33 +50,7 @@ Task("Clean")
     CleanDirectories(directoryToClean);
 });
 
-Task("Yarn-Install")
-    .WithCriteria(() => FileExists("./package.json"), "package.json file not found in repository")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
-    if (BuildSystem.IsLocalBuild)
-    {
-        Information("Running yarn install...");
-        Yarn.Install();
-    }
-    else
-    {
-        Information("Running yarn install --immutable...");
-        Yarn.Install(settings => settings.ArgumentCustomization = args => args.Append("--immutable"));
-    }
-});
-
-Task("Run-Gulp")
-    .WithCriteria(() => FileExists("./gulpfile.js"), "gulpfile.js file not found in repository")
-    .IsDependentOn("Yarn-Install")
-    .Does(() =>
-{
-    Gulp.Local.Execute();
-});
-
 Task("Statiq-Preview")
-    .IsDependentOn("Run-Gulp")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -95,7 +61,6 @@ Task("Statiq-Preview")
 });
 
 Task("Statiq-Build")
-    .IsDependentOn("Run-Gulp")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -106,7 +71,6 @@ Task("Statiq-Build")
 });
 
 Task("Statiq-LinkValidation")
-    .IsDependentOn("Run-Gulp")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
