@@ -1,0 +1,4 @@
+[build]
+  publish = "output/"
+
+  command = "dotnet tool restore && dotnet cake --target Statiq-Build"
