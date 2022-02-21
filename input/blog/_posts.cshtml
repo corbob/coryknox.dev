@@ -1,5 +1,5 @@
 ﻿@inherits StatiqRazorPage<IEnumerable<IDocument>>
-<div>    
+<div>
     @foreach (IDocument post in Model)
     {
         IDocument topicDocument = OutputPages[$"{Constants.BlogPath}/categories/{post.GetString("Category")}/index.html"].First();

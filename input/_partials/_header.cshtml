@@ -1,1 +1,7 @@
-<h1 class="d-flex justify-content-center"><a href="/">@Constants.SiteTitle</a> - @Model.GetString("Title")</h1>
+<div class="header">
+    <h1 style="text-align: center;"><a href="/">@Constants.SiteTitle</a>@(Model.GetBool("HideTitle") ? "" : " -- " + Model.GetString("Title"))</h1>
+    <div style="text-align: right;">
+        <a href="/@Constants.BlogPath">Blog</a>
+        <a href="@Constants.ResumeUri">Resume</a>
+    </div>
+</div>
