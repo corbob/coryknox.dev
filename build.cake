@@ -81,6 +81,28 @@ Task("Statiq-LinkValidation")
     DotNetRun(projectPath, new ProcessArgumentBuilder().Append(string.Format("--output \"{0}\"", buildData.OutputDirectory)), settings);
 });
 
+Task("Statiq-RelativeLinkValidation")
+    .Does<BuildData>((context, buildData) =>
+{
+    var settings = new DotNetRunSettings {
+        Configuration = configuration,
+        ArgumentCustomization = args => args.Append("-a ValidateRelativeLinks=Error")
+    };
+
+    DotNetRun(projectPath, new ProcessArgumentBuilder().Append(string.Format("--output \"{0}\"", buildData.OutputDirectory)), settings);
+});
+
+Task("Statiq-AbsoluteLinkValidation")
+    .Does<BuildData>((context, buildData) =>
+{
+    var settings = new DotNetRunSettings {
+        Configuration = configuration,
+        ArgumentCustomization = args => args.Append("-a ValidateAbsoluteLinks=Error")
+    };
+
+    DotNetRun(projectPath, new ProcessArgumentBuilder().Append(string.Format("--output \"{0}\"", buildData.OutputDirectory)), settings);
+});
+
 Task("Default")
     .IsDependentOn("Statiq-Preview");
 
