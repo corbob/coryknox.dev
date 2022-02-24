@@ -1,6 +1,7 @@
 ﻿body {
     font-family: 'Courier New', Courier, monospace;
 }
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -12,7 +13,27 @@ a {
 }
 
 .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: .25rem .5rem;
     background-color: rgb(223, 223, 223);
     border-bottom: 1px solid;
+}
+
+.title {
+    grid-column: 1;
+}
+
+.pageTitle {
+    grid-column: 2;
+    text-align: center;
+}
+
+.links {
+    grid-column: 3;
+    text-align: right;
+}
+
+.selectioned {
+    background-color: aliceblue;
 }

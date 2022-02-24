@@ -30,11 +30,6 @@ var projectPath = "./coryknox.dev.csproj";
 // TASKS
 //////////////////////////////////////////////////////////////////////
 
-Task("OS-test")
-    .Does(() =>
-{
-    Information(Context.Environment.Platform.Family);
-});
 Task("Clean")
     .Does<BuildData>((context, buildData) =>
 {
@@ -51,6 +46,7 @@ Task("Clean")
 });
 
 Task("Statiq-Preview")
+    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -61,6 +57,7 @@ Task("Statiq-Preview")
 });
 
 Task("Statiq-Build")
+    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -71,6 +68,7 @@ Task("Statiq-Build")
 });
 
 Task("Statiq-LinkValidation")
+    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -82,6 +80,7 @@ Task("Statiq-LinkValidation")
 });
 
 Task("Statiq-RelativeLinkValidation")
+    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -93,11 +92,24 @@ Task("Statiq-RelativeLinkValidation")
 });
 
 Task("Statiq-AbsoluteLinkValidation")
+    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
         Configuration = configuration,
         ArgumentCustomization = args => args.Append("-a ValidateAbsoluteLinks=Error")
+    };
+
+    DotNetRun(projectPath, new ProcessArgumentBuilder().Append(string.Format("--output \"{0}\"", buildData.OutputDirectory)), settings);
+});
+
+Task("Statiq-Debug")
+    .IsDependentOn("Clean")
+    .Does<BuildData>((context, buildData) =>
+{
+    var settings = new DotNetRunSettings {
+        Configuration = "Debug",
+        ArgumentCustomization = args => args.Append("--attach")
     };
 
     DotNetRun(projectPath, new ProcessArgumentBuilder().Append(string.Format("--output \"{0}\"", buildData.OutputDirectory)), settings);
