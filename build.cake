@@ -46,7 +46,6 @@ Task("Clean")
 });
 
 Task("Statiq-Preview")
-    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {

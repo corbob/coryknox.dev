@@ -1,17 +1,14 @@
-Title: Home
-HideTitle: true
+ArchiveSources: => $"posts/**/*"
+ArchivePageSize: => 5
+ArchiveOrderKey: Published
+ArchiveOrderDescending: true
+Title: Blog
+ArchiveTitle: >
+  => $"{GetString("Title")}{(GetInt("Index") > 1 ? (" (Page " + GetInt("Index") + ")") : null)}"
 ---
-<div>
-    <h1 style="text-align: center;">
-        Cory Knox
-        <br>
-        Software Developer
-    </h1>
-    <p>
-        Welcome to my weird corner of the internet. Here I hope to provide value through blog posts and other such
-        things.
-    </p>
-</div>
-<div style="text-align: center;">
-    <img src="assets/img/Cory.png" width="700" loading="lazy">
-</div>
+
+<section class="blog-section">
+    <div class="blog-container">
+        @Html.Partial($"/_posts.cshtml", Document.GetChildren())
+    </div>
+</section>
