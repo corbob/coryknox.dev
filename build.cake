@@ -79,7 +79,6 @@ Task("Statiq-LinkValidation")
 });
 
 Task("Statiq-RelativeLinkValidation")
-    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -91,7 +90,6 @@ Task("Statiq-RelativeLinkValidation")
 });
 
 Task("Statiq-AbsoluteLinkValidation")
-    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
@@ -103,7 +101,6 @@ Task("Statiq-AbsoluteLinkValidation")
 });
 
 Task("Statiq-Debug")
-    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
     var settings = new DotNetRunSettings {
