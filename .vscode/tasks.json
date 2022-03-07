@@ -16,8 +16,8 @@
     {
       "label": "toolsRestore",
       "type": "process",
-      "args": ["tool", "restore"],
-      "command": "dotnet"
+      "command": "dotnet",
+      "args": ["tool", "restore"]
     }
   ]
 }
