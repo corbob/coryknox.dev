@@ -1,6 +1,7 @@
 ---
 Published: 2019-01-14
-RedirectFrom: /2019/01/Module Development
+RedirectFrom:
+  2019/01/Module Development/index.html
 Title: Everything you didn't know you didn't know about PSModuleDevelopment
 ---
 ![wordcloud]({{ site.baseurl }}/images/ModuleDevelopment.png)
@@ -149,4 +150,3 @@ The xml directory contains the Type and Format Definitions for your module. The 
 # Conclusion
 
 Now that we've gone over the basics of getting started, you can go out and get your own modules started. Stay tuned for part 2 where we'll take our next step in the journey.
-

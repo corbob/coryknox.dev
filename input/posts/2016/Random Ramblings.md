@@ -1,6 +1,7 @@
 ---
 Published: 2016-3-7
-RedirectFrom: /2016/03/Random Ramblings
+RedirectFrom:
+  2016/03/Random Ramblings/index.html
 Title: Random Ramblings
 ---
 

@@ -1,6 +1,7 @@
 ---
 Published: 2016-3-8
-RedirectFrom: /2016/03/Shutdown-vs-restart
+RedirectFrom:
+  2016/03/Shutdown-vs-restart/index.html
 Title: Shutdown vs Restart in Windows 8+
 ---
 

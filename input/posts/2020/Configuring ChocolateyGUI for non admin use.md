@@ -1,6 +1,7 @@
 ---
 Published: 2020-04-17
-RedirectFrom: /2020/04/Configuring-ChocolateyGUI-for-non-admin-use
+RedirectFrom:
+  2020/04/Configuring-ChocolateyGUI-for-non-admin-use/index.html
 Title: "Configuring ChocolateyGUI for non admin use"
 ---
 
@@ -91,4 +92,3 @@ Does it work?
 Yes.
 Have you encountered a similar issue?
 What steps did you take to resolve it?
-

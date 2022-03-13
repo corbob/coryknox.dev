@@ -1,6 +1,7 @@
 ---
 Published: 2016-3-9
-RedirectFrom: /2016/03/Windows-Print-Services
+RedirectFrom:
+  2016/03/Windows-Print-Services
 Title: Windows Print Services in a not-XP world
 ---
 

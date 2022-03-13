@@ -1,6 +1,7 @@
 ---
 Published: 2018-8-29
-RedirectFrom: /2018/08/Azure-Functions-FTW
+RedirectFrom:
+  2018/08/Azure-Functions-FTW/index.html
 Title: Azure Functions FTW - Using Azure Functions to schedule GitHub Pages posts
 ---
 

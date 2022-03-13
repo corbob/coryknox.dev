@@ -1,6 +1,7 @@
 ---
 Published: 2018-9-3
-RedirectFrom: /2018/09/Foray-Into-vscode-powershell
+RedirectFrom:
+  2018/09/Foray-Into-vscode-powershell/index.html
 Title: A Foray into vscode-powershell
 ---
 

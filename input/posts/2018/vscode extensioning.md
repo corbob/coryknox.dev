@@ -1,6 +1,7 @@
 ---
 Published: 2018-7-3
-RedirectFrom: /2018/07/vscode-extensioning
+RedirectFrom:
+  2018/07/vscode-extensioning/index.html
 Title: So you want to make a VS Code extension
 comments: true
 ---

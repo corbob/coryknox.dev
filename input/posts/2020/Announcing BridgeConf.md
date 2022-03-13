@@ -1,6 +1,7 @@
 ---
 Published: 2020-04-10
-RedirectFrom: /2020/04/Announcing-BridgeConf
+RedirectFrom:
+  2020/04/Announcing-BridgeConf/index.html
 Title: "Announcing #BridgeConf"
 ---
 
@@ -57,4 +58,3 @@ Now I've contributed to the PowerShell extension for Visual Studio.
 I've been using it for years.
 And I learned stuff in watching the talk.
 If I can learn something about a tool that I use nearly daily, and in fact contribute to, then so can you!
-
