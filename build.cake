@@ -33,7 +33,7 @@ var projectPath = "./coryknox.dev.csproj";
 Task("Clean")
     .Does<BuildData>((context, buildData) =>
 {
-    var directoryToClean = new []{
+    var directoryToClean = new[]{
         buildData.PublishDirectory,
         buildData.OutputDirectory,
         "./bin",
@@ -46,9 +46,11 @@ Task("Clean")
 });
 
 Task("Statiq-Preview")
+    .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
-    var settings = new DotNetRunSettings {
+    var settings = new DotNetRunSettings
+    {
         Configuration = configuration
     };
 
@@ -59,7 +61,8 @@ Task("Statiq-Build")
     .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
-    var settings = new DotNetRunSettings {
+    var settings = new DotNetRunSettings
+    {
         Configuration = configuration
     };
 
@@ -70,7 +73,8 @@ Task("Statiq-LinkValidation")
     .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
-    var settings = new DotNetRunSettings {
+    var settings = new DotNetRunSettings
+    {
         Configuration = configuration,
         ArgumentCustomization = args => args.Append("-a ValidateRelativeLinks=Error -a ValidateAbsoluteLinks=Error")
     };
@@ -82,7 +86,8 @@ Task("Statiq-RelativeLinkValidation")
     .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
-    var settings = new DotNetRunSettings {
+    var settings = new DotNetRunSettings
+    {
         Configuration = configuration,
         ArgumentCustomization = args => args.Append("-a ValidateRelativeLinks=Error")
     };
@@ -94,7 +99,8 @@ Task("Statiq-AbsoluteLinkValidation")
     .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
-    var settings = new DotNetRunSettings {
+    var settings = new DotNetRunSettings
+    {
         Configuration = configuration,
         ArgumentCustomization = args => args.Append("-a ValidateAbsoluteLinks=Error")
     };
@@ -106,7 +112,8 @@ Task("Statiq-Debug")
     .IsDependentOn("Clean")
     .Does<BuildData>((context, buildData) =>
 {
-    var settings = new DotNetRunSettings {
+    var settings = new DotNetRunSettings
+    {
         Configuration = "Debug",
         ArgumentCustomization = args => args.Append("--attach")
     };
