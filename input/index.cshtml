@@ -7,8 +7,8 @@ ArchiveTitle: >
   => $"{GetString("Title")}{(GetInt("Index") > 1 ? (" (Page " + GetInt("Index") + ")") : null)}"
 ---
 
-<section class="blog-section">
-    <div class="blog-container">
+<section>
+    <div>
         @Html.Partial($"/_posts.cshtml", Document.GetChildren())
     </div>
 </section>
