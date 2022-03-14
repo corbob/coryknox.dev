@@ -7,7 +7,7 @@ Title: A Foray into vscode-powershell
 
 This is a foray into getting started with the vscode-powershell extension. In particular noting some of the perhaps less obvious things I needed to do in order to get it to build on Ubuntu 18.04.
 
-<!--more-->
+<!-- more -->
 
 First thing you'll need to do of course is to fork the repository. There are two repositories that we want to fork to our github account: [PowerShellEditorService](https://github.com/PowerShell/PowerShellEditorServices) and [vscode-powershell](https://github.com/PowerShell/vscode-powershell). Once you've forked them (and perhaps made hours of work that Tiler and Rob keep harrassing you as not being good enough...) you need to clone them to your local machine. I highly recommend keeping them side by side and so I clone them into a repos directory. On my Windows machine all of my git repos are stored at `C:\repos\` on my fresh install of Ubuntu Linux 18.04 they're stored at `~/git/`.
 

@@ -11,7 +11,7 @@ Naturally this is not an ideal setup.
 But the issue becomes: How do I grant them the ability to install software without needing to reach out to me too often.
 Quite simply, they need the ability to run installations as an administrator, but not the ability to just become administrator.
 
-<!--more-->
+<!-- more -->
 
 Naturally this is something that has been solved at my day job.
 To solve this type of problem there, we have Microsoft Endpoint Manager Configuration Manager.

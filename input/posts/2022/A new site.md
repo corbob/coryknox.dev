@@ -7,6 +7,8 @@ So I've have this domain for just about two years now. What have I done with it?
 
 So... I've been eyeing up [Statiq](https://statiq.dev) for a while. Finally I've moved my old site over to this one, with all of the blog posts.
 
+<!-- more -->
+
 What's going to be on here? No idea! Mostly just my ramblings. Perhaps some rants about what's bothering at the moment.
 
 For now, have some old posts that are probably no longer relevent, but they're still here just in case.

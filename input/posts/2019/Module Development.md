@@ -8,7 +8,7 @@ Title: Everything you didn't know you didn't know about PSModuleDevelopment
 
 Late in 2018, I had the distinct pleasure of spending a few hours with [@FredWeinmann](https://twitter.com/FredWeinmann). We spent the time fixing up my PSCUCM Module (Available from the [PowerShell Gallery](https://www.powershellgallery.com/packages/PSCUCM) and [GitHub](https://github.com/corbob/PSCUCM)). During this session we went through a number of commands and setups utilizing his PSModuleDevelopment module and PSFramework. What will ensue is a multi-part series on Developing PowerShell Modules using PSFramework and PSModuleDevelopment.
 
-<!--more-->
+<!-- more -->
 
 And so, without further ado, I present part 1:
 

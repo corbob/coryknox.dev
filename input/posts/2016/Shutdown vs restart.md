@@ -7,7 +7,7 @@ Title: Shutdown vs Restart in Windows 8+
 
 Here's a quick one I learned watching a recent episode of [Defrag tools](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-155-Boot-Performance). Turns out, if you choose Shutdown from the Windows start menu, it doesn't actually shutdown the system like it did in Windows 7 and earlier.
 
-<!--more-->
+<!-- more -->
 
 When I first hooked up my Arduino, it wasn't being recognized by my laptop. I then realized that my wired mouse wasn't working either. Turns out, at some point, my USB host controller decided to fall over. So naturally, I shutdown my laptop, waited a few minutes and turned it back on. Still no USB. So next step: Pull the battery and unplug the power cable. Down goes the laptop. Tada! USB host stands up.
 

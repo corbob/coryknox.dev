@@ -7,7 +7,7 @@ Title: Azure Functions FTW - Using Azure Functions to schedule GitHub Pages post
 
 If you're reading this... And it's after August 29th 2018 at 9 AM PDT... Then that means it worked. I mean I know it works because this isn't the first post of it's kind, but it's the first I'm actually going to keep up.
 
-<!--more-->
+<!-- more -->
 
 It all started when I was discussing having finally setup this blog on Twitter. Someone asked if I could schedule blog posts. At the time I didn't know if it was possible, but a simple web search found the answer over here: [Scheduling posts on Github pages with AWS lambda functions by: Evert Pot][1] Of course, this is fine and dandy if you already have AWS. But! What if you have Azure? Could you do something similar with it?
 

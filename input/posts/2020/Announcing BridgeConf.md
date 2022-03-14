@@ -9,7 +9,7 @@ What is the best part of the PowerShell community?
 That's an excellent question.
 As a community, we have numerous places to gather and exchange ideas, obtain advice, share our expertise, form relationships that extend beyond the confines of an office building.
 
-<!--more-->
+<!-- more -->
 
 ## The Why
 

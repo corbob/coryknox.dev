@@ -8,7 +8,7 @@ comments: true
 
 So, you have this great idea for a VS Code extension? But perhaps you're thinking "where do I start?" Well, fear not! for I have written this post to tell you the answer!
 
-<!--more-->
+<!-- more -->
 
 Oh? Were you expecting me to have the answer? Well, you see the truth is I have no idea. I just took some code, put some other code in it, and it worked (well sorta).
 
