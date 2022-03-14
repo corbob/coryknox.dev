@@ -19,10 +19,6 @@
             <div itemprop="articleBody">
                 @Html.Raw(excerpt)
             </div>
-            <div class="collapse" aria-hidden="true" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                <meta itemprop="name" content="@post.GetString("Author")">
-            </div>
-            <meta itemprop="dateModified" content="@post.GetString("Modified")">
         </article>
     }
 </div>

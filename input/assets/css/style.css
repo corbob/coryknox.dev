@@ -37,3 +37,7 @@ a {
 code {
     background-color: aliceblue;
 }
+
+p img {
+    width: 75%;
+}

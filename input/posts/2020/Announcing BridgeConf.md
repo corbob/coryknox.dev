@@ -21,7 +21,7 @@ At any given time there are people there to answer questions (sometimes more tha
 
 ## The What
 
-![#BridgeConf]({{ site.baseurl }}/images/BridgeConf-Details.png)
+![#BridgeConf](/assets/img/posts/BridgeConf-Details.png)
 
 As a way to celebrate the spirit of #bridge in the time of COVID-19 and social distancing making in-person events non-existent, we are excited to announce #BridgeConf.
  #BridgeConf is a one-day single track livestreamed conference-style event for PowerShell, automation, programming, infrastructure, sysadmin, and other miscellaneous nerds around the world.
