@@ -1,8 +1,7 @@
 public static class NetlifyRedirects
 {
-    public static void AddRedirects(string redirectToAdd, string redirectsFile = "output/_redirects")
+    public static void AddRedirects(string redirectsToAddFile = "myRedirects", string redirectsFile = "output/_redirects")
     {
-        File.AppendAllText(redirectsFile, "\n");
-        File.AppendAllText(redirectsFile, redirectToAdd);
+        File.AppendAllLines(redirectsFile, File.ReadAllLines(redirectsToAddFile));
     }
 }
