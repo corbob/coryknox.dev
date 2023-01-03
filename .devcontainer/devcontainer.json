@@ -1,23 +1,53 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.202.5/containers/dotnet
 {
-	"name": "C# (.NET)",
-	"runArgs": ["--init"],
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"VARIANT": "6.0-focal",
-			"NODE_VERSION": "14"
+	"name": "Hugo Extended",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"html.format.templating": true,
+				"frontMatter.dashboard.openOnStart": true
+			},
+
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"bungcip.better-toml",
+				"davidanson.vscode-markdownlint",
+				"shardulm94.trailing-spaces",
+				"nhoizey.gremlins",
+				"streetsidesoftware.code-spell-checker",
+				"bierner.emojisense",
+				"eliostruyf.vscode-front-matter",
+				"marvhen.reflow-markdown",
+				"errata-ai.vale-server",
+				"redhat.vscode-yaml"
+			]
 		}
 	},
-	"settings": {},
-	"extensions": [
-		"ms-dotnettools.csharp",
-		"DavidAnson.vscode-markdownlint",
-		"shardulm94.trailing-spaces",
-		"nhoizey.gremlins",
-		"streetsidesoftware.code-spell-checker",
-		"bierner.emojisense"
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		1313
 	],
-	"remoteUser": "vscode"
+
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers/features/hugo:1": {
+			"extended": true
+		},
+		"ghcr.io/devcontainers/features/go:1": {},
+		"ghcr.io/devcontainers/features/powershell:1": {}
+	},
+	// Mounts used for local development of the theme. Not needed unless you're developing.
+	// "mounts" : [
+	//     {
+	//         "source": "${localWorkspaceFolder}/../hugo-theme",
+	//         "target": "${containerWorkspaceFolder}/../hugo-theme",
+	//         "type": "bind"
+	//     }
+	// ],
+	"postCreateCommand": "sudo pwsh -f ${containerWorkspaceFolder}/.devcontainer/Install-Vale.ps1"
 }
