@@ -1,3 +1,0 @@
-# https://docs.netlify.com/routing/redirects/
-https://knoxy.ca/*  https://coryknox.dev/:splat 301!
-/meet https://chocolatey.zoom.us/j/7950365997

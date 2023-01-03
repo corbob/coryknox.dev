@@ -1,4 +1,58 @@
 [build]
-  publish = "output/"
+  publish = "public/"
+  command = "hugo"
 
-  command = "dotnet tool restore && dotnet cake --target Statiq-Build"
+[[redirects]]
+  from = "https://knoxy.ca/*"
+  to = "https://coryknox.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meet"
+  to = "https://chocolatey.zoom.us/j/7950365997"
+
+[[redirects]]
+  from = "/2020/04/configuring-chocolateygui-for-non-admin-use"
+  to = "/posts/2020/configuring-chocolateygui-for-non-admin-use"
+  force = true
+
+[[redirects]]
+  from = "/2020/04/announcing-bridgeconf"
+  to = "/posts/2020/announcing-bridgeconf"
+  force = true
+
+[[redirects]]
+  from = "/2019/01/module development"
+  to = "/posts/2019/module development"
+  force = true
+
+[[redirects]]
+  from = "/2018/07/vscode-extensioning"
+  to = "/posts/2018/vscode-extensioning"
+  force = true
+
+[[redirects]]
+  from = "/2018/09/foray-into-vscode-powershell"
+  to = "/posts/2018/foray-into-vscode-powershell"
+  force = true
+
+[[redirects]]
+  from = "/2018/08/azure-functions-ftw"
+  to = "/posts/2018/azure-functions-ftw"
+  force = true
+
+[[redirects]]
+  from = "/2016/03/windows-print-services"
+  to = "/posts/2016/windows-print-services"
+  force = true
+
+[[redirects]]
+  from = "/2016/03/shutdown-vs-restart"
+  to = "/posts/2016/shutdown-vs-restart"
+  force = true
+
+[[redirects]]
+  from = "/2016/03/random-ramblings"
+  to = "/posts/2016/random-ramblings"
+  force = true

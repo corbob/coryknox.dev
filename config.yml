@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://platen.io/schemas/hugo/config/schema.json
+
+baseURL: 'https://coryknox.dev'
+languageCode: 'en-us'
+title: 'Cory Knox'
+module:
+  # Replacements are used for theme authoring. Do not uncomment unless you know what you're doing.
+  # replacements: >-
+  #   github.com/corbob/hugo-theme -> /workspaces/hugo-theme
+  imports:
+    - path: 'github.com/corbob/hugo-theme'
+params:
+  useRss: 'true'
+  favicon: img/favicon.png
