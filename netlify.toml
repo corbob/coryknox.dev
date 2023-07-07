@@ -13,6 +13,10 @@
   to = "https://chocolatey.zoom.us/j/7950365997"
 
 [[redirects]]
+  from = "/choco"
+  to = "https://community.chocolatey.org/install.ps1"
+
+[[redirects]]
   from = "/2020/04/configuring-chocolateygui-for-non-admin-use"
   to = "/posts/2020/configuring-chocolateygui-for-non-admin-use"
   force = true
