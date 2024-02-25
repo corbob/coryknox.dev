@@ -1,6 +1,7 @@
 ---
 Published: 2016-03-07
 Title: Random Ramblings
+categories: [changing the site]
 ---
 
 So here it is. It’s a blog. What are you going to do about it?

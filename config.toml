@@ -1,0 +1,61 @@
+baseURL = "https://coryknox.dev"
+title = "Cory Knox"
+theme = "github.com/leafee98/hugo-theme-flat"
+enableRobotsTXT = true
+paginate = 6
+enableEmoji = true
+# Enable Disqus comments
+# disqusShortname = "yourdiscussshortname"
+
+# these values are hugo built in markup config
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = false
+noClasses = false
+noHl = false
+style = 'monokailight'
+tabWidth = 4
+
+[params]
+description = "Cory Knox Personal Blog"
+# mainSections = ['posts']
+
+[[params.footer_rows]]
+[[params.footer_rows.items]]
+name = "Creative Commons Attribution 4.0 International"
+url = "https://creativecommons.org/licenses/by/4.0/"
+pre = "Copyright <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY-4.0</a>"
+[[params.footer_rows.items]]
+pre = "<script data-goatcounter=\"https://corbob.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>"
+
+[[params.footer_rows]]
+[[params.footer_rows.items]]
+name = "Hugo"
+url = "https://gohugo.io"
+pre = "Powered by <a href=\"https://gohugo.io\">Hugo</a>"
+[[params.footer_rows.items]]
+name = "theme flat"
+url = "https://cgit.leafee98.com/hugo-theme-flat.git"
+pre = "Theme <a href=\"https://git.leafee98.com/leafee98/hugo-theme-flat.git\">hugo-theme-flat</a>"
+
+
+[[menus.main]]
+name = "Posts"
+url = "/posts/"
+weight = 30
+
+[[menus.main]]
+pageref = "about"
+name = "About"
+weight = 80
+
+[[menus.main]]
+name = "TimeStamper"
+url = "https://timestamper.knoxy.ca"
+weight = 50

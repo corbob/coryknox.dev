@@ -1,7 +1,8 @@
 ---
 Published: 2018-07-03
 Title: So you want to make a VS Code extension
-comments: true
+Categories: [Programming]
+Tags: [VS Code]
 ---
 
 So, you have this great idea for a VS Code extension? But perhaps you're thinking "where do I start?" Well, fear not! for I have written this post to tell you the answer!

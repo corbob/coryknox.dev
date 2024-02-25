@@ -1,6 +1,8 @@
 ---
 Published: 2018-09-03
 Title: A Foray into vscode-powershell
+Categories: [programming]
+Tags: [powershell, vs code]
 ---
 
 This is a foray into getting started with the vscode-powershell extension. In particular noting some of the perhaps less obvious things I needed to do in order to get it to build on Ubuntu 18.04.

@@ -1,6 +1,7 @@
 ---
 Published: 2022-03-01
 Title: A new site? Of course there is...
+categories: [changing the site]
 ---
 
 So I've have this domain for just about two years now. What have I done with it? Exactly nothing!

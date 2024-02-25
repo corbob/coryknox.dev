@@ -1,6 +1,8 @@
 ---
 Published: 2019-01-14
 Title: Everything you didn't know you didn't know about PSModuleDevelopment
+Categories: [Programming]
+Tags: [PowerShell]
 ---
 ![wordcloud](/img/posts/ModuleDevelopment.png)
 

@@ -1,6 +1,8 @@
 ---
 Published: 2018-08-29
 Title: Azure Functions FTW - Using Azure Functions to schedule GitHub Pages posts
+Categories: [automatings, programming]
+Tags: [Azure, PowerShell]
 ---
 
 If you're reading this... And it's after August 29th 2018 at 9 AM PDT... Then that means it worked. I mean I know it works because this isn't the first post of it's kind, but it's the first I'm actually going to keep up.
