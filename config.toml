@@ -31,6 +31,8 @@ description = "Cory Knox Personal Blog"
 name = "Creative Commons Attribution 4.0 International"
 url = "https://creativecommons.org/licenses/by/4.0/"
 pre = "Copyright <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY-4.0</a>"
+[[params.footer_rows.items]]
+pre = "<script data-goatcounter=\"https://corbob.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>"
 
 [[params.footer_rows]]
 [[params.footer_rows.items]]
