@@ -1,6 +1,8 @@
 ---
 title: Preventing Updates on Vagrant Boxes
 date: 2023-11-27
+Categories: [General Computering]
+tags: [vagrant, Windows, PowerShell]
 ---
 
 Picture the scenario: You have a Vagrant box that you've set up for testing purposes.

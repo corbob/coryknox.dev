@@ -1,6 +1,8 @@
 ---
 Published: 2016-03-09
 Title: Windows Print Services in a not-XP world
+Categories: [General Computering]
+Tags: [windows]
 ---
 
 Recently I've had the "pleasure" of troubleshooting Windows print services... You see, we use a CUPS server and samba on Linux to host our printers. We then have a script look at the samba server and map to the CUPS printers using IPP printing. It would seem that on 64 bit Windows 7 (and probably newer, and maybe 32 bit, but we don't use that one...) Occasionally printing to IPP will just randomly fail (all print jobs show up as error and can't be resumed or anything). To resolve this issue, we have a script that removes all network based printers, and then deletes all unused print drivers. We then remap the printers and everything kinda sorta works. Except when we have to do this "fix" every day or two.

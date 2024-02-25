@@ -1,2 +1,4 @@
 github.com/corbob/hugo-theme v0.0.0-20230103005645-d41b230b5272 h1:z2FcCqz9S1g87pH9BrzoMRSwestiMrm+6D9fFxOBdiw=
 github.com/corbob/hugo-theme v0.0.0-20230103005645-d41b230b5272/go.mod h1:a84C2AWxsyOHZ9AbNLudX/R9wwiTdPBPrunj10SzqEQ=
+github.com/leafee98/hugo-theme-flat v0.0.0-20240123130918-36c140b28cc3 h1:WpWDB2yNXr5TzAcEx1Yu0RfT816YIQO6mMEOSlAEPP4=
+github.com/leafee98/hugo-theme-flat v0.0.0-20240123130918-36c140b28cc3/go.mod h1:Oz7GRO6rOgv2JLFcCBQ8GPH61gsiutHuIY5qaZUXv4w=

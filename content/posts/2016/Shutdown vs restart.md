@@ -1,6 +1,8 @@
 ---
 Published: 2016-03-08
 Title: Shutdown vs Restart in Windows 8+
+Categories: [General Computering]
+Tags: [windows]
 ---
 
 Here's a quick one I learned watching a recent episode of [Defrag tools](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-155-Boot-Performance). Turns out, if you choose Shutdown from the Windows start menu, it doesn't actually shutdown the system like it did in Windows 7 and earlier.

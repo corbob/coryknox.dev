@@ -1,7 +1,8 @@
 ---
 Published: 2020-04-17
 Title: Configuring ChocolateyGUI for non admin use
-draft: false
+Categories: [General Computering]
+Tags: [windows]
 ---
 
 The other day I needed to fix something on my children's laptops.
