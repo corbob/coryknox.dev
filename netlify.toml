@@ -59,3 +59,8 @@
   from = "/2016/03/random-ramblings"
   to = "/posts/2016/random-ramblings"
   force = true
+
+[[redirects]]
+  from = "/til"
+  to = "/tags/til"
+  force = true
