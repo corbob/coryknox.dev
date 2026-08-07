@@ -3,9 +3,16 @@
 {{- errorf "include shortcode: missing required parameter 'file'" -}}
 {{- end -}}
 
+{{- if strings.HasPrefix $path "/" -}}
+{{- errorf "include shortcode: file path %q must be relative" $path -}}
+{{- end -}}
+
+{{- if findRE $path `\.\.` -}}
+{{- errorf "include shortcode: file path %q must not contain '..'" $path -}}
+{{- end -}}
+
 {{- if not (fileExists $path) -}}
 {{- errorf "include shortcode: file %q not found" $path -}}
 {{- end -}}
 
-{{- $content := readFile $path -}}
-{{- $content | markdownify -}}
+{{- readFile $path | markdownify -}}

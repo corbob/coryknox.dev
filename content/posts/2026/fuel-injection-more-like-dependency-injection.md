@@ -4,10 +4,10 @@ date: 2026-07-23
 categories: [learnings]
 ---
 
-{{<include file="/includes/dependency-injections-note.md">}}
+{{<include file="includes/dependency-injections-note.md">}}
 
-I've been learning about dependency injection in .Net.
-Or, more accurately: I've been realizing that I already knew about dependency injection in .Net.
+I've been learning about dependency injection in .NET.
+Or, more accurately: I've been realizing that I already knew about dependency injection in .NET.
 
 Now, a common thing we do in software development is to use everyday objects as analogies to try to explain concepts.
 This generally works well when trying to explain object oriented programming and inheritance because we can easily visualize that an apple is a fruit, as in an orange; while an apple is not an orange.
@@ -28,7 +28,7 @@ I know for instance that most components come in multiple price points.
 I assume those price points generally come down to various performance differences.
 You have the low end spark plugs, batteries, tires, oil, etc.
 Then you have the more expensive versions of those same components.
-This is dependency injection at it's most basic level.
+This is dependency injection at its most basic level.
 
 Dependency injection allows you to take a dependency (for instance spark plugs), and insert (aka: inject) it into your application at runtime.
 Now that dependency must meet the baseline specifications set out for it, but it can also go above and beyond those specifications.
@@ -37,7 +37,7 @@ A spark plug that doesn't spark is likely to cause you to have a bad time.
 In Chocolatey CLI we use this feature to provide the various commands available.
 For example, in the open source version we inject the Install command.
 This install command meets all of the requirements of a command, but it specifically installs packages.
-We then offer our customers the Chocolatey Licensed Extension which provides it's own install command.
+We then offer our customers the Chocolatey Licensed Extension which provides its own install command.
 This install command installs packages as well as the open source version does, but it also adds functionality into that install command.
 
 But, why would you want this?
