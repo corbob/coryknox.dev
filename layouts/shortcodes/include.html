@@ -7,7 +7,7 @@
 {{- errorf "include shortcode: file path %q must be relative" $path -}}
 {{- end -}}
 
-{{- if findRE $path `\.\.` -}}
+{{- if findRE `\.\.` $path -}}
 {{- errorf "include shortcode: file path %q must not contain '..'" $path -}}
 {{- end -}}
 
