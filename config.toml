@@ -4,8 +4,6 @@ theme = "github.com/leafee98/hugo-theme-flat"
 enableRobotsTXT = true
 paginate = 6
 enableEmoji = true
-# Enable Disqus comments
-# disqusShortname = "yourdiscussshortname"
 
 # these values are hugo built in markup config
 [markup.highlight]
