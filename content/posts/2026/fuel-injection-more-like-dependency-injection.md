@@ -10,7 +10,7 @@ I've been learning about dependency injection in .NET.
 Or, more accurately: I've been realizing that I already knew about dependency injection in .NET.
 
 Now, a common thing we do in software development is to use everyday objects as analogies to try to explain concepts.
-This generally works well when trying to explain object oriented programming and inheritance because we can easily visualize that an apple is a fruit, as in an orange; while an apple is not an orange.
+This generally works well when trying to explain object-oriented programming and inheritance because we can easily visualize that an apple is a fruit, as is an orange; while an apple is not an orange.
 For dependency injection, I've always heard it explained using cars.
 And then, we often use diesel and gasoline engines as the example.
 But, I find that model hard to grasp.
@@ -20,13 +20,13 @@ For instance, I suspect the fuel tank has some differences, even if it's only th
 
 However, I've been thinking more about it, and using cars actually makes perfect sense.
 But, not at the engine level.
-I mean, yes at the engine level, but using it as the differentiator is too low level.
+I mean, yes at the engine level, but using it as the differentiator is too low-level.
 Instead, I think we should use it as the reference point; and talk about the engine and not the car as a whole.
 
 So I'll say it again, I'm not a car guy; but I do know some things about cars.
 I know for instance that most components come in multiple price points.
 I assume those price points generally come down to various performance differences.
-You have the low end spark plugs, batteries, tires, oil, etc.
+You have the low-end spark plugs, batteries, tires, oil, etc.
 Then you have the more expensive versions of those same components.
 This is dependency injection at its most basic level.
 
