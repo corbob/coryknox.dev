@@ -1,6 +1,6 @@
 ---
 title: Fuel Injection? More Like Dependency Injection
-date: 2026-07-23
+date: 2026-09-15
 categories: [learnings]
 ---
 
